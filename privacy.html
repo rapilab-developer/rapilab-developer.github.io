@@ -39,7 +39,7 @@ a{color:#0b6}
 <p>・画像の読み取り機能が、動作状況の診断情報を送るとき（後述）</p>
 <p>・「集める」でURLを登録したとき。お客様が登録したURLの先へ、そのページと画像を取りに行きます。取得した画像は端末内に控え、当方（開発者）のサーバーへは送りません</p>
 <p>Android標準のクラウドバックアップ（Googleアカウント／Googleドライブへの自動バックアップ）は、本アプリでは無効にしています。</p>
-<p>機種変更のときの「端末間データ移行」で新しい端末へ引き継がれるのは、仕分けた枚数の統計だけです。タグ・メモ・お気に入り・コレクション名・画像から読み取った文字は、引き継ぎの対象から外しています。これらを新しい端末へ移すには、アプリの「バックアップ」と「復元」をお使いください。</p>
+<p>機種変更のときの「端末間データ移行」で新しい端末へ引き継がれるのは、仕分けた枚数の統計だけです（Android 12 以降の場合。Android 11 では統計も引き継がれません）。タグ・メモ・お気に入り・コレクション名・画像から読み取った文字は、引き継ぎの対象から外しています。これらを新しい端末へ移すには、アプリの「バックアップ」と「復元」をお使いください。</p>
 <p>アプリの「バックアップ」機能で書き出すファイルは、お客様が選んだ端末内のフォルダ（既定では Documents/GallerySift/Backup）に保存されます。このファイルは暗号化していません。その保存先を他のクラウドサービスと同期させている場合は、そのサービスへ複製されることがあります。</p>
 <h2>画像から読み取る情報について</h2>
 <p>自動タグ、重複・類似の見分け、検索のために、画像内の文字（OCR）、QRコード・バーコードの内容、画像に写っているものの推定（画像の言語化）、画像に埋め込まれた生成情報を読み取り、端末内のデータベースに保存する場合があります。読み取りはすべて端末内で行い、画像や読み取った文字を当方のサーバーへ送信することはありません。</p>
@@ -90,7 +90,7 @@ a{color:#0b6}
 <li>When the image-reading features send diagnostic information about how they are working (see below)</li>
 <li>When you add a URL in Collect. The app fetches that page and its image from the address you entered. The image is kept on the device and is not sent to any server run by the developer</li>
 <p>Android cloud backup (automatic backup to a Google Account or Google Drive) is disabled for this app.</p>
-<p>When you move to a new phone, the only thing carried over by the Android device-to-device transfer is the sorting statistics (how many items you sorted). Tags, notes, favourites, collection names and text read from images are excluded from that transfer. To move those to a new phone, use the Backup and Restore features inside the app.</p>
+<p>When you move to a new phone, the only thing carried over by the Android device-to-device transfer is the sorting statistics (how many items you sorted). This applies to Android 12 and later; on Android 11 not even the statistics are carried over. Tags, notes, favourites, collection names and text read from images are excluded from that transfer. To move those to a new phone, use the Backup and Restore features inside the app.</p>
 <p>Files written by the Backup feature are saved to a folder you choose on the device (by default Documents/GallerySift/Backup). These files are not encrypted. If that folder is synced by another cloud service, copies may reach that service.</p>
 <h2>Text and codes read from images</h2>
 <p>For automatic tagging, telling duplicates and look-alikes apart, and search, the app may read text inside an image (OCR), the contents of QR codes and barcodes, estimated labels for what an image shows, and generation metadata embedded in an image, and store the result in a database on the device. All of this runs on the device, and neither the image nor the text read from it is sent to any server run by the developer.</p>
